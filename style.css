@@ -1,0 +1,109 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif ;
+}
+body{
+    background-color: rgba(75, 75, 75, 0.75);
+}
+
+.title{
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+.UnderText{
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    background-color: #474747;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.link:hover{
+    text-decoration: none;
+    color: #0078ff;
+}
+.email{
+    color: #0078ff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.main-nav h1{
+    color: white;
+    cursor: pointer;
+}
+.main-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 60%;
+    max-width: 40rem;
+    list-style: none;
+}.main-nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.main-nav ul li a:hover{
+    color: rgb(155, 155, 155);
+}
+button{
+    color: white;
+    font-weight: 500;
+    background-color: #0078ff;
+    padding: .75rem 1rem;
+    border-radius: 10rem;
+    border: 5px;
+    border-color: rgb(125, 125, 125);
+    border-style: outset;
+    transition: 0.3s ease-in-out;
+}
+button:hover{
+    background-color: white;
+    scale: .9;
+    color: #0078ff;
+}
+
+.line{
+    width: 100%;
+    background-color: #0078ff;
+    height: 5px;
+}
+
+.menu-btn{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .main-nav ul{
+        display: none;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+    .menu-btn svg{
+        fill: white;
+        width: 3rem;
+        height: 3rem;
+    }
+    
+}
